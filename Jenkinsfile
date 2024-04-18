@@ -1,5 +1,10 @@
 pipeline {
     agent any 
+
+    environment {
+        PYTHONIOENCODING = 'utf-8'
+    }
+
     stages {
         stage('Build') { 
             steps {
