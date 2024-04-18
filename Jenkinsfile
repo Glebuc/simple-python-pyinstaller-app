@@ -22,9 +22,9 @@ pipeline {
                 }
             }
         }
-        tage('Deliver') {
+        stage('Deliver') {
             steps {
-                sh "python -m pyinstaller --onefile sources/add2vals.py"
+                bat "python -m pyinstaller --onefile sources/add2vals.py"
             }
             post {
                 success {
